@@ -1,0 +1,4 @@
+Ebay practical constraints are as follows roughly:
+1.7 billion items on ebay
+134 million active buyers worldwide
+18.3 million seller accounts
