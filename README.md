@@ -278,3 +278,17 @@ The results highlight the fundamental trade-off of the Swiss-Mexican mechanism. 
 5. Sandholm, T. (2002). *Algorithm for optimal winner determination in combinatorial auctions*. Artificial Intelligence, 135(1-2), 1-54.
 6. Milgrom, P. (2004). *Putting Auction Theory to Work*. Cambridge University Press. (Foundational text on the application of complex mechanism design in real-world spectrum and e-commerce markets).
 7. Kaggle. *eBay Auction Datasets*. Retrieved and modeled for empirical simulations regarding log-normal price distributions in combinatorial e-commerce networks.
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@article{henry2026swissmexican,
+  title={The Swiss-Mexican Auction: Reconciling Strict Budget Constraints with Dynamic Bartering in Large-Scale Combinatorial Markets},
+  author={Henry, Julian Philup},
+  journal={aeae.inc},
+  year={2026},
+  month={March}
+}
+```
