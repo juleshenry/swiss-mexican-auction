@@ -164,9 +164,11 @@ The auctioneer's objective function yielded **$944,639.79** in total extracted r
 
 ### 4.4 The "Anti-Whale" Phenomenon: Fragmentation Efficiency
 
-An unexpected, emergent property of the Value-Density heuristic was its structural bias against "whales" (bidders with massive absolute budgets requesting large bundles, e.g., $|O_i| = 5$). Despite their high absolute budgets ($B_i$), the sheer size of their target bundles created exponentially more intersections in the conflict graph.
+An unexpected, emergent property of the Value-Density heuristic was its structural bias against "whales" (bidders with massive absolute budgets requesting large bundles, e.g., $|O_i| = 5$). For example, a single bidder requesting $O_{\text{whale}} = \{\text{MacBook Pro, External Monitor, Magic Keyboard, USB-C Dock, Studio Display}\}$ with a massive $B_i = \$5,000$ creates exponentially more intersections in the conflict graph than smaller, isolated bids.
 
-Consequently, the algorithm naturally favored "minnows"—bidders with smaller absolute budgets but highly targeted, small bundles ($|O_i| = 2$). This fragmentation efficiency resulted in a more democratized market distribution. While counter-intuitive from a traditional auction perspective (where the highest absolute dollar bid wins), in a constrained combinatorial graph, packing two disjoint \$500 bids is structurally superior and computationally faster to clear than accommodating a single overlapping \$1,500 bid that blocks half the inventory.
+Consequently, the algorithm naturally favored "minnows"—bidders with smaller absolute budgets but highly targeted, small bundles ($|O_i| = 2$). It would prioritize two distinct users: one bidding \$1,500 for the $\{ \text{MacBook Pro, USB-C Dock} \}$ and another bidding \$2,000 for the $\{ \text{Studio Display, Magic Keyboard} \}$. 
+
+This fragmentation efficiency resulted in a more democratized market distribution. While counter-intuitive from a traditional auction perspective (where the highest absolute dollar bid wins), in a constrained combinatorial graph, packing disjoint minnow bids is structurally superior and computationally faster to clear than accommodating a single overlapping whale bid that blocks half the inventory.
 
 ### 4.5 Closing the Optimality Gap: LP-Guided "Swiss-Fallback"
 
