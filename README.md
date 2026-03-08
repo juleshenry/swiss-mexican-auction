@@ -43,7 +43,7 @@ graph TD
     subgraph Algorithmic Execution
     D --> F(Mexican Execution Layer)
     E --> F
-    F --> G[Calculate Value Density: ρ_i = B_i / |O_i|]
+    F --> G["Calculate Value Density: ρ_i = B_i / |O_i|"]
     G --> H[Sort Descending & Greedy Allocation]
     H --> I[Fast Market Clearing]
     end
