@@ -254,3 +254,6 @@ The results highlight the fundamental trade-off of the Swiss-Mexican mechanism. 
 2. Lehmann, D., O’Callaghan, L. I., & Shoham, Y. (2002). *Truth Revelation in Approximately Efficient Combinatorial Auctions*. Journal of the ACM (JACM), 49(5), 577-602.
 3. Lavi, R., & Swamy, C. (2011). *Truthful and Near-Optimal Mechanism Design via Linear Programming*. Journal of the ACM (JACM), 58(6), 1-24.
 4. Leyton-Brown, K., Pearson, M., & Shoham, Y. (2000). *Towards a Universal Test Suite for Combinatorial Auction Algorithms*. Proceedings of the 2nd ACM Conference on Electronic Commerce (EC-00), 66-76.
+5. Sandholm, T. (2002). *Algorithm for optimal winner determination in combinatorial auctions*. Artificial Intelligence, 135(1-2), 1-54.
+6. Milgrom, P. (2004). *Putting Auction Theory to Work*. Cambridge University Press. (Foundational text on the application of complex mechanism design in real-world spectrum and e-commerce markets).
+7. Kaggle. *eBay Auction Datasets*. Retrieved and modeled for empirical simulations regarding log-normal price distributions in combinatorial e-commerce networks.
