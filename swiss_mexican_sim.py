@@ -91,3 +91,23 @@ def run_phase_transition_experiment():
 
 if __name__ == "__main__":
     run_phase_transition_experiment()
+
+def run_scaling_experiment():
+    print("\n--- Running Asymptotic Scaling Experiment ---")
+    sizes = [1000, 5000, 10000, 50000, 100000]
+    times = []
+    
+    for size in sizes:
+        items_df = generate_synthetic_ebay_data(num_items=max(10000, size), num_categories=50)
+        bidders_df = generate_combinatorial_bidders(items_df, num_bidders=size, max_bundle_size=5)
+        
+        _, _, _, exec_time = greedy_mexican_allocation(bidders_df, len(items_df))
+        times.append(exec_time)
+        print(f"Bidders: {size}, Time: {exec_time:.4f}s")
+        
+    print("Scaling Experiment Complete.")
+    print("Sizes:", sizes)
+    print("Times:", times)
+
+if __name__ == "__main__":
+    run_scaling_experiment()
